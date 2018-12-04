@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-footer a {
+  color: inherit;
+}
