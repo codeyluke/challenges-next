@@ -1,5 +1,5 @@
 function doFizzBuzz() {
-  const num = prompt("Please enter your number");
+  const num = parseInt(prompt("Please enter your number"));
   if (num % 3 == 0 && num % 5 == 0) {
     document.getElementById(
       "result"
@@ -12,6 +12,10 @@ function doFizzBuzz() {
     document.getElementById(
       "result"
     ).innerHTML = `<h3 class="container text-center m-2">Fizz</h3>`;
+  } else if (Number.isInteger(num) == false) {
+    document.getElementById(
+      "result"
+    ).innerHTML = `<h3 class="container text-center m-2">Please type a number instead of a string.</h3>`;
   } else {
     document.getElementById(
       "result"
